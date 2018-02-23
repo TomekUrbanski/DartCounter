@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="area1width">300dp</dimen>
+    <dimen name="area1height">300dp</dimen>
+    <dimen name="area10width">225dp</dimen>
+    <dimen name="area10height">225dp</dimen>
+    <dimen name="are5width">225dp</dimen>
+    <dimen name="area5height">225dp</dimen>
+    <dimen name="area20width">150dp</dimen>
+    <dimen name="area20height">150dp</dimen>
+    <dimen name="area25width">75dp</dimen>
+    <dimen name="area25height">75dp</dimen>
+    <dimen name="scorePadding">10dp</dimen>
+    <dimen name="scoreTextSize">40sp</dimen>
+    <dimen name="leftDartsWidth">50dp</dimen>
+    <dimen name="leftDartsHeight">120dp</dimen>
+    <dimen name="leftDartsPaddingB">8dp</dimen>
+    <dimen name="rightdartsWidth">50dp</dimen>
+    <dimen name="rightDartsHeight">120dp</dimen>
+    <dimen name="rightDartsPaddingB">8dp</dimen>
+    <dimen name="buttonAmarginB">8dp</dimen>
+    <dimen name="buttonAmarginE">20dp</dimen>
+    <dimen name="buttonBmarginB">8dp</dimen>
+    <dimen name="buttonBmarginS">20dp</dimen>
+    <dimen name="frameAwidth">90dp</dimen>
+    <dimen name="frameAheight">48dp</dimen>
+    <dimen name="frameAmarginB">8dp</dimen>
+    <dimen name="frameAmarginE">20dp</dimen>
+    <dimen name="frameApadding">8dp</dimen>
+    <dimen name="frameBwidth">90dp</dimen>
+    <dimen name="frameBheight">48dp</dimen>
+    <dimen name="frameBmarginB">8dp</dimen>
+    <dimen name="frameBmarginS">20dp</dimen>
+    <dimen name="frameBpadding">8dp</dimen>
+    <dimen name="buttonResetMarginB">8dp</dimen>
+</resources>

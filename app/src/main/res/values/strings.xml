@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DartCounter</string>
+    <string name="player_b">player b</string>
+    <string name="player_a">player a</string>
+    <string name="reset">reset</string>
+    <string name="score">0</string>
+</resources>

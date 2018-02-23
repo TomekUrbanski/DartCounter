@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.dartcounter.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/dartboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        >
+        <Button
+            android:id="@+id/t1"
+            android:layout_width="@dimen/area1width"
+            android:layout_height="@dimen/area1height"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/t1"
+            android:onClick="throw1"/>
+
+        <Button
+            android:id="@+id/t10"
+            android:layout_width="@dimen/area10width"
+            android:layout_height="@dimen/area10height"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/t10"
+            android:onClick="throw10"/>
+
+        <Button
+            android:id="@+id/t5"
+            android:layout_width="@dimen/are5width"
+            android:layout_height="@dimen/area5height"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/t5"
+            android:onClick="throw5"/>
+
+        <Button
+            android:id="@+id/t20"
+            android:layout_width="@dimen/area20width"
+            android:layout_height="@dimen/area20height"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/t20"
+            android:onClick="throw20"/>
+
+        <Button
+            android:id="@+id/t25"
+            android:layout_width="@dimen/area25width"
+            android:layout_height="@dimen/area25height"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/t25"
+            android:onClick="throw25"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/current_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/dartboard"
+        android:text="@string/score"
+        android:padding="@dimen/scorePadding"
+        android:shadowColor="@color/green"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="15"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/scoreTextSize" />
+
+    <ImageView
+        android:id="@+id/leftDarts"
+        android:layout_width="@dimen/leftDartsWidth"
+        android:layout_height="@dimen/leftDartsHeight"
+        android:layout_above="@+id/players"
+        android:layout_alignStart="@+id/dartboard"
+        android:paddingBottom="@dimen/leftDartsPaddingB"
+        android:src="@drawable/left_3darts" />
+
+    <ImageView
+        android:id="@+id/rightDarts"
+        android:layout_width="@dimen/rightdartsWidth"
+        android:layout_height="@dimen/rightDartsHeight"
+        android:layout_above="@+id/players"
+        android:layout_alignEnd="@+id/dartboard"
+        android:paddingBottom="@dimen/rightDartsPaddingB"
+        android:src="@drawable/right_3darts" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_above="@+id/resetButton"
+        android:id="@+id/players">
+
+        <Button
+            android:id="@+id/playerA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/buttonAmarginB"
+            android:layout_marginEnd="@dimen/buttonAmarginE"
+            android:padding="8dp"
+            android:shadowColor="@color/blue"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="4"
+            android:onClick="a_score"
+            android:text="@string/player_a"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/playerB"
+            android:text="@string/player_b"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/buttonBmarginB"
+            android:layout_marginStart="@dimen/buttonBmarginS"
+            android:padding="8dp"
+            android:shadowColor="@color/red"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="4"
+            android:onClick="b_score"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_above="@+id/resetButton"
+        android:orientation="horizontal"
+        android:id="@+id/frame">
+
+        <ImageView
+            android:id="@+id/playerAframe"
+            android:scaleType="fitXY"
+            android:layout_width="@dimen/frameAwidth"
+            android:layout_height="@dimen/frameAheight"
+            android:layout_marginBottom="@dimen/frameAmarginB"
+            android:layout_marginEnd="@dimen/frameAmarginE"
+            android:padding="@dimen/frameApadding"
+            android:visibility="invisible"
+            android:src="@drawable/frame" />
+
+        <ImageView
+            android:id="@+id/playerBframe"
+            android:scaleType="fitXY"
+            android:layout_width="@dimen/frameBwidth"
+            android:layout_height="@dimen/frameBheight"
+            android:layout_marginBottom="@dimen/frameBmarginB"
+            android:layout_marginStart="@dimen/frameBmarginS"
+            android:padding="@dimen/frameBpadding"
+            android:visibility="invisible"
+            android:src="@drawable/frame"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/resetButton"
+        android:text="@string/reset"
+        android:textColor="@color/red"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/buttonResetMarginB"
+        android:onClick="reset"/>
+
+
+</RelativeLayout>
+
